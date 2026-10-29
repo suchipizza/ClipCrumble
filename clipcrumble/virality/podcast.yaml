@@ -1,0 +1,32 @@
+# Podcast / long-form talk. Mostly INVENTED — see docs/PLAN.md.
+strategist_title: Podcast Clip Viral Strategist
+producer_role: podcast clip producer
+source_description: long-form podcast or talk-show recordings
+story_unit: takes, stories and arguments
+label: podcast
+storytelling_techniques: [the hot take, the story with a twist, the disagreement, the expert explaining one surprising fact, the guest's confession]
+target_emotions: agreement, outrage, curiosity, laughter
+objective_extra: "Never cut a take so it says the opposite of what the speaker meant."
+focus_unit: take or story
+length_bands:
+  - {range: "15–30 s", use: "one take"}
+  - {range: "30–45 s", use: "a story with a punchline"}
+  - {range: "45–60 s", use: "a disagreement that resolves"}
+hook_window_s: 2
+hook_max_words: 10
+hook_style: CAPS or sentence case, bold
+hook_examples: ["HE SAID WHAT EVERYONE IS THINKING", "THIS CHANGED HOW I SEE MONEY", "SHE DISAGREED IMMEDIATELY"]
+hook_shapes: [hot-take, story, disagreement, fact]
+min_per_shape: 1
+banned_hooks: ["misattributed quotes", "out-of-context takes that flip meaning"]
+structure_extra: ""
+universal_situations: [money, dating, work, family]
+sound_rule: "Captions throughout (word-level); speaker label when two voices."
+content_types:
+  - {code: A, name: "Hot take", definition: "a strong opinion"}
+  - {code: B, name: "Story", definition: "an anecdote with a payoff"}
+  - {code: C, name: "Disagreement", definition: "two people clash"}
+  - {code: D, name: "Fact", definition: "one surprising fact explained"}
+intensity_label: provocation
+subject_column: Speakers
+secondary_reaction: make viewers comment their opinion

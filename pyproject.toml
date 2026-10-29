@@ -1,0 +1,21 @@
+[project]
+name = "clipcrumble"
+version = "0.1.0"
+description = "Brief-to-scheduled-clips pipeline for clipping campaigns: brief + footage -> rendered clips, Metricool schedule, human to-do list."
+requires-python = ">=3.11"
+dependencies = [
+  "typer>=0.12", "pyyaml", "jinja2", "jsonschema", "requests",
+  "faster-whisper", "scenedetect", "opencv-python-headless<5", "imagehash", "pillow", "imageio-ffmpeg", "numpy",
+  "gdown", "yt-dlp",
+]
+[project.optional-dependencies]
+dev = ["pytest"]
+[project.scripts]
+clipcrumble = "clipcrumble.cli:app"
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+include = ["clipcrumble*"]
+[tool.setuptools.package-data]
+clipcrumble = ["prompts/*.md", "prompts/reference/*.md", "virality/*.yaml", "schemas/*.json"]

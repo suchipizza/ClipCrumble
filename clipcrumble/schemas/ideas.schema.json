@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClipCrumble ideas.json",
+  "type": "object",
+  "required": ["campaign", "inspection", "concepts"],
+  "properties": {
+    "campaign": {"type": "string"},
+    "generated_by": {"type": "string"},
+    "inspection": {
+      "type": "object",
+      "required": ["transcript", "frames", "vision_review"],
+      "properties": {
+        "transcript": {"type": "boolean"}, "frames": {"type": "boolean"}, "vision_review": {"type": "boolean"},
+        "notes": {"type": "string"}
+      }
+    },
+    "concepts": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "rank", "title", "content_type", "scores", "us_appeal", "tier", "why", "core_story",
+                     "curiosity_gap", "ending", "segments", "siblings"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^c\\d{2}$"},
+          "rank": {"type": "integer", "minimum": 1},
+          "title": {"type": "string"},
+          "subject": {"type": "string"},
+          "content_type": {"type": "string"},
+          "length_s": {"type": "number"},
+          "scores": {
+            "type": "object",
+            "required": ["hook", "intensity", "payoff", "clarity", "share", "compliance"],
+            "properties": {
+              "hook": {"type": "integer", "minimum": 1, "maximum": 5},
+              "intensity": {"type": "integer", "minimum": 1, "maximum": 5},
+              "payoff": {"type": "integer", "minimum": 1, "maximum": 5},
+              "clarity": {"type": "integer", "minimum": 1, "maximum": 5},
+              "share": {"type": "integer", "minimum": 1, "maximum": 5},
+              "compliance": {"type": "integer", "minimum": 0, "maximum": 5}
+            }
+          },
+          "us_appeal": {"type": "integer", "minimum": 1, "maximum": 5},
+          "tier": {"enum": ["A", "B", "C"]},
+          "why": {"type": "string"},
+          "core_story": {"type": "string"},
+          "curiosity_gap": {"type": "string"},
+          "ending": {"type": "string"},
+          "risks": {"type": "array", "items": {"type": "string"}},
+          "compliance_notes": {"type": "string"},
+          "segments": {"type": "array", "minItems": 1, "maxItems": 6, "items": {"$ref": "#/$defs/segment"}},
+          "context_overlays": {
+            "type": "array",
+            "items": {"type": "object", "required": ["src", "in", "out", "text"],
+                      "properties": {"src": {"type": "string"}, "in": {"type": "number"}, "out": {"type": "number"},
+                                     "text": {"type": "string"}}}
+          },
+          "end_card": {"type": ["object", "null"],
+                       "properties": {"text": {"type": "string"}, "last_seconds": {"type": "number"}}},
+          "siblings": {
+            "type": "array", "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["platform", "hook", "caption"],
+              "properties": {
+                "platform": {"enum": ["tiktok", "instagram", "youtube"]},
+                "hook": {"type": "object", "required": ["text", "shape"],
+                         "properties": {"text": {"type": "string"}, "shape": {"type": "string"}}},
+                "first_segment_override": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/segment"}]},
+                "zoom_punch": {"type": ["number", "null"], "minimum": 1.0, "maximum": 2.0},
+                "caption": {"type": "object", "required": ["curiosity", "question", "cta"],
+                            "properties": {"curiosity": {"type": "string"}, "question": {"type": "string"},
+                                           "cta": {"type": "string"}, "youtube_title": {"type": "string"}}}
+              }
+            }
+          }
+        }
+      }
+    },
+    "recommendations": {"type": "object"}
+  },
+  "$defs": {
+    "segment": {
+      "type": "object",
+      "required": ["src", "in", "out"],
+      "properties": {
+        "src": {"type": "string"},
+        "in": {"type": "number", "minimum": 0},
+        "out": {"type": "number", "minimum": 0},
+        "function": {"type": "string"},
+        "dialogue": {"type": "string"},
+        "approximate": {"type": "boolean"},
+        "crop": {"type": "object", "properties": {
+          "mode": {"enum": ["crop", "pillarbox", "native"]},
+          "x": {"type": "number", "minimum": 0, "maximum": 1},
+          "zoom": {"type": "number", "minimum": 1, "maximum": 2.5},
+          "y": {"type": "number", "minimum": 0, "maximum": 1},
+          "gamma": {"type": "number", "minimum": 1, "maximum": 1.8}}}
+      }
+    }
+  }
+}

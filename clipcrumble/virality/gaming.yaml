@@ -1,0 +1,32 @@
+# Gaming footage / trailers. Mostly INVENTED (no source prompt) — see docs/PLAN.md.
+strategist_title: Gaming Clip Viral Strategist
+producer_role: gaming highlights editor
+source_description: game trailers, gameplay captures and dev footage
+story_unit: plays, fails, reveals and secrets
+label: gaming
+storytelling_techniques: [the clutch moment, the fail, the hidden detail, the boss reveal, "POV: first time playing", "rate this from 1-10"]
+target_emotions: hype, laughter, "how did they do that", nostalgia
+objective_extra: ""
+focus_unit: play or reveal
+length_bands:
+  - {range: "10–20 s", use: "one play, one fail"}
+  - {range: "20–40 s", use: "a build to a clutch or a reveal"}
+  - {range: "40–60 s", use: "a montage on the game's own audio"}
+hook_window_s: 2
+hook_max_words: 8
+hook_style: CAPS, bold
+hook_examples: ["WATCH THE TOP LEFT CORNER", "NOBODY NOTICED THIS DETAIL", "POV: YOUR FIRST BOSS FIGHT"]
+hook_shapes: [look-again, POV, rate-it, fail, hype]
+min_per_shape: 1
+banned_hooks: ["fake leaks", "claims about release dates not in the brief"]
+structure_extra: ""
+universal_situations: [losing at the last second, a friend who carries, rage quitting]
+sound_rule: "Game audio only; captions or context overlays throughout."
+content_types:
+  - {code: A, name: "Clutch", definition: "the play that wins"}
+  - {code: B, name: "Fail", definition: "the play that loses, funnily"}
+  - {code: C, name: "Detail", definition: "a hidden detail"}
+  - {code: D, name: "Reveal", definition: "a character, boss or world reveal"}
+intensity_label: hype
+subject_column: Characters / players
+secondary_reaction: make viewers comment their rating

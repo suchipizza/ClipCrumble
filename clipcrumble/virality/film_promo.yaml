@@ -1,0 +1,48 @@
+# General film promo (comedy, drama, action). Derived from the DIGGER strategist v2.2 prompt + LESSONS_LEARNED §5.
+strategist_title: Film Promo Viral Clip Strategist
+producer_role: trailer and social-cut editor
+source_description: official film footage (trailers, TV spots, clips, BTS)
+story_unit: moments, lines and reveals
+label: film promo
+storytelling_techniques:
+  - "\"wait, that's [star]?\" recognition reveals"
+  - the single funniest or strangest quotable line, left hanging
+  - the premise as a POV
+  - cast spotting — the surprise co-star
+  - absurd visuals
+  - "[character] vs [huge problem]"
+  - love-it-or-hate-it framing that lets the comments argue
+  - fan-edit energy — fast cuts on the footage's own audio
+target_emotions: surprise, laughter, curiosity, "I need to see this"
+objective_extra: "Show viewers something they did not expect, then let them decide. Never argue that the film is good."
+focus_unit: line, reveal or moment
+length_bands:
+  - {range: "10–20 s", use: "one line or one reveal (strongest on DIGGER)"}
+  - {range: "20–40 s", use: "POV/premise and cast spotting"}
+  - {range: "40–60 s", use: "fan edits on the footage's own audio"}
+hook_window_s: 2
+hook_max_words: 8
+hook_style: CAPS, bold, upper-middle of the frame
+hook_examples:
+  - "WAIT… THAT'S TOM CRUISE?"
+  - "NOBODY TOLD ME THIS CAST WAS IN A COMEDY"
+  - "POV: YOU CAUSED IT AND WANT CREDIT"
+hook_shapes: [recognition-reveal, no-context-line, POV, cast-spotting, pick-a-side, fan-edit]
+min_per_shape: 1
+banned_hooks:
+  - "review scores, box office, arguing with critics"
+  - "comparisons to other films"
+  - "quotation marks around words not in the transcript"
+structure_extra: "Optional framing overlay in the last 2.5 s when the brief requires a message."
+universal_situations: [a boss who won't take blame, a bad first impression, the one friend who overreacts, a plan going wrong]
+sound_rule: "Original audio only, no added music; captions 2–4 words per card built across cuts; context overlay when unsure of a line."
+content_types:
+  - {code: A, name: "Recognition reveal", definition: "a star the viewer will not recognise at first"}
+  - {code: B, name: "No-context line", definition: "the strangest line, on screen, left hanging"}
+  - {code: C, name: "Premise POV", definition: "the plot in one relatable sentence"}
+  - {code: D, name: "Cast spotting", definition: "who else is in this?"}
+  - {code: E, name: "Pick a side", definition: "split opinion bait"}
+  - {code: F, name: "Fan edit", definition: "fast cuts on the biggest moments"}
+intensity_label: surprise / laugh
+subject_column: Cast / characters
+secondary_reaction: make viewers laugh

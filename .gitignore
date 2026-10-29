@@ -1,0 +1,25 @@
+# media and client material never go in this public repo
+campaigns/*
+!campaigns/_example/
+media/
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.zip
+# personal state
+accounts.yaml
+tracker/
+clipcrumble/state.sqlite
+# secrets
+.env
+*.token
+client_secret*.json
+rclone.conf
+# env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.egg-info/

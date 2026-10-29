@@ -1,0 +1,69 @@
+# Horror film promo. Derived from PRD §A.3 (horror row) + DIGGER lessons; never_after_dark_cc_prompt.md was not available.
+strategist_title: Horror Film Viral Clip Strategist
+producer_role: horror trailer editor
+source_description: official horror-film footage (movie clips, trailers, publicity clips)
+story_unit: scare beats and dread moments
+label: horror
+storytelling_techniques:
+  - dread before the scare — the viewer senses something is wrong before the character does
+  - the look-again moment — something in the frame the viewer only notices on the second watch
+  - dramatic irony — the audience sees the threat, the character does not
+  - the unanswered question — a line or image that demands "what is that?"
+  - the reaction shot — a face reacting to something we have not been shown yet
+  - silence and sound design — the creak, the breath, the cut to quiet before the hit
+  - the wrong detail — an ordinary room, one thing out of place
+  - the dare — "don't watch this alone", "pause at 0:07"
+target_emotions: dread, jump-scare shock, unease, morbid curiosity, "send this to someone who scares easily"
+objective_extra: >-
+  Horror travels on fear the viewer can share: clips should make people tag a friend, rewatch to spot something,
+  or argue about what they saw. Never undercut the scare with jokes about the film.
+focus_unit: scare, encounter or eerie reveal
+length_bands:
+  - {range: "10–20 s", use: "one scare, one image, one line — look-again and no-context hooks"}
+  - {range: "20–35 s", use: "a dread build that ends on the scare or the reaction"}
+  - {range: "35–60 s", use: "a full suspense scene with setup, escalation and a hard-cut payoff"}
+hook_window_s: 2
+hook_max_words: 8
+hook_style: CAPS, bold, upper-middle of the frame
+hook_examples:
+  - "WATCH THE DOORWAY BEHIND HER"
+  - "POV: YOU HEAR IT TOO"
+  - "DON'T WATCH THIS WITH THE LIGHTS OFF"
+  - "SHE DOESN'T KNOW WHO'S LISTENING"
+  - "\"IT'S STILL IN THE HOUSE\""
+  - "WHAT WOULD YOU DO HERE?"
+hook_shapes: [look-again, POV, dare, dramatic-irony, no-context-line, comment-bait]
+min_per_shape: 1
+banned_hooks:
+  - "a hook that names or hints at the ending, the twist, or who is dead"
+  - "\"you won't believe…\" / \"wait for it\" with no scene-specific detail"
+  - "quotation marks around words that are not in the transcript"
+  - "claims about the film's quality, reviews, awards or box office"
+  - "jokes that mock the film or the cast"
+structure_extra: >-
+  Hard cut on the scare or on the reaction — never let the moment breathe into a cool-down. Loop-bait endings
+  (last frame flows back into the first) when the footage allows. Keep the final 2–2.5 s for the rent-or-buy end
+  card only if it does not step on the payoff; otherwise the CTA lives in the caption.
+universal_situations:
+  - being alone in a house that makes noises
+  - feeling watched
+  - a voice or knock that should not be there
+  - someone who isn't telling the truth
+  - a child or a stranger saying something they shouldn't know
+  - the door you should not open
+sound_rule: >-
+  Keep the original audio and sound design; never add music. Text on screen throughout for sound-off viewers:
+  captions from the film's official subtitles when it has them (else the transcript), and a bracketed context overlay ([SHE HEARS FOOTSTEPS]) where dialogue is absent or
+  the transcript is low-confidence.
+content_types:
+  - {code: A, name: "Jump scare / hit", definition: "a sudden scare with a clean build — cut on the hit or the reaction"}
+  - {code: B, name: "Slow dread", definition: "a long unsettling take where nothing quite happens — wrong detail, presence, silence"}
+  - {code: C, name: "Supernatural encounter", definition: "the medium/character meets the presence — voice, apparition, possession"}
+  - {code: D, name: "Creepy line", definition: "one line of dialogue that chills out of context"}
+  - {code: E, name: "Living-are-worse", definition: "human menace: a lie, a threat, someone who knows more than they say"}
+  - {code: F, name: "Look-again / spot it", definition: "something hidden in frame that rewards a rewatch"}
+  - {code: G, name: "Atmosphere / place", definition: "the house, the dark, the isolation as the character"}
+  - {code: H, name: "Reaction", definition: "a performance beat — terror, disbelief — that carries the clip by itself"}
+intensity_label: scare / unease
+subject_column: Characters / presence
+secondary_reaction: make viewers rewatch or tag a friend

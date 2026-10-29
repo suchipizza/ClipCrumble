@@ -1,0 +1,61 @@
+# Filled directly from the Love Is Blind master prompt (PRD Appendix A.1). Rendering prompts/ideate.md with this
+# config must reproduce A.1's rules one-for-one (tests/test_reality_tv_parity.py).
+strategist_title: Reality TV Viral Clip Strategist
+producer_role: reality-TV story producer
+source_description: long-form reality TV episode footage
+story_unit: micro-stories
+label: reality TV
+storytelling_techniques:
+  - curiosity gaps
+  - romantic tension, jealousy, awkwardness, betrayal, revelations
+  - pick-a-side arguments
+  - outrageous statements
+  - unintentional comedy
+  - sweet or vulnerable moments
+  - dramatic irony
+  - tag-a-friend / debate moments
+target_emotions: shock, laughter, outrage, sympathy, delight
+objective_extra: ""
+focus_unit: couple, love triangle or interaction
+length_bands:
+  - {range: "15–25 s", use: "a funny or shocking moment"}
+  - {range: "25–40 s", use: "a tense conversation with a punchline"}
+  - {range: "40–60 s", use: "a dramatic build with a payoff"}
+hook_window_s: 3
+hook_max_words: 12
+hook_style: sentence case allowed, emoji allowed
+hook_examples:
+  - "He really thought this was a compliment 💀"
+  - "She asked ONE question and everything changed"
+  - "Would you break up with someone over this?"
+  - "She has no idea what he's about to tell her"
+  - "This is the exact moment she got the ick"
+  - "Who do you think is lying here?"
+  - "Wait until you hear his explanation…"
+hook_shapes: [pick-a-side, shock, awkward, red-flag]
+min_per_shape: 0
+banned_hooks:
+  - "misleading promises the clip does not deliver"
+structure_extra: "Ending: immediately after the payoff, or on an unresolved reaction."
+universal_situations:
+  - dealbreaker
+  - mixed signals
+  - jealousy
+  - lying
+  - awkward date
+  - fight about expectations
+  - red flag
+  - falling in love
+sound_rule: "Use reaction shots, jump cuts and silence deliberately; keep the authentic audio."
+content_types:
+  - {code: A, name: "Controversial / Pick a side", definition: "a disagreement viewers will take sides on"}
+  - {code: B, name: "Shock / Revelation", definition: "a confession or reveal that changes the situation"}
+  - {code: C, name: "Funny / Awkward", definition: "unintentional comedy, cringe, awkward silences"}
+  - {code: D, name: "Romantic / Sweet", definition: "a vulnerable or sweet moment"}
+  - {code: E, name: "Red flags / Dating advice", definition: "behaviour viewers will call out"}
+  - {code: F, name: "Love triangle / Jealousy", definition: "three people, one problem"}
+  - {code: G, name: "Relatable", definition: "a situation everyone has lived"}
+  - {code: H, name: "Dramatic reversal", definition: "the moment the story flips"}
+intensity_label: emotional intensity
+subject_column: Characters
+secondary_reaction: make viewers laugh

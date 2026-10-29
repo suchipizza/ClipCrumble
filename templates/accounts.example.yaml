@@ -1,0 +1,25 @@
+# Copy to ClipCrumble/accounts.yaml (gitignored). One entry per posting account.
+TT1:
+  platform: tiktok
+  handle: your_tiktok_handle
+  metricool_brand: "Brand A"          # exact, case-sensitive
+  metricool_blog_id: "1234567"
+  metricool_timezone: Europe/Zurich   # the brand's planner timezone
+  tiktok_account_type: personal       # personal | business
+  followers: 0
+  us_pct: null                        # measured, from analytics
+  tier1_pct: null
+  content_rewards_verified: false
+  exclusive_campaign: null
+  exclusive_until: null
+IG1:
+  platform: instagram
+  handle: your_instagram_handle
+  metricool_brand: "Brand A"
+  metricool_blog_id: "1234567"
+  metricool_timezone: Europe/Zurich
+  followers: 0
+  us_pct: null
+  content_rewards_verified: false
+  exclusive_campaign: null
+  exclusive_until: null

@@ -1,0 +1,19 @@
+slug: <slug>
+accounts: []                       # ids from accounts.yaml, one per platform, e.g. [TT1, IG1]
+start: 2026-10-30                  # first posting day (local)
+days: 3
+keyboard_hours: "13:00-23:30"      # local; slots with a <=1 h submission deadline must end inside this window
+posts_per_platform_per_day: 5
+slots_target: ["10:00", "12:00", "14:00", "16:00", "18:00"]   # in target_audience_tz
+tz: Europe/Zurich
+target_audience_tz: America/New_York
+concepts_target: 15
+target_audience_description: US-first English-speaking horror / movie fans
+hosting: gdrive
+rclone_remote: gdrive
+drive_root: ClipCrumble
+scheduler: metricool
+scheduler_route: auto              # auto | csv | api
+metricool_monthly_cap: null        # set on capped plans (Free: 20)
+whisper_model: large-v3-turbo
+language: auto           # auto-detect; captions come from burned-in subtitles when present

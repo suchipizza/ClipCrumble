@@ -1,0 +1,38 @@
+# Celebrity / press-junket interviews (LADbible-style). Fields marked INVENTED in docs/PLAN.md.
+strategist_title: Interview Clip Viral Strategist
+producer_role: entertainment-interview producer
+source_description: press-junket and talk-show interviews
+story_unit: moments of chemistry, confession and comedy
+label: celebrity interview
+storytelling_techniques:
+  - recognition reveal — "wait, they were in THAT?"
+  - the strangest line of the interview, left hanging
+  - on-camera chemistry or teasing between co-stars
+  - a confession or a story nobody expected
+  - the premise of the film as a POV
+  - a game or quiz answer that goes wrong
+target_emotions: laughter, delight, surprise, "they're so cute together"
+objective_extra: "Respect talent: no mocking, no private life beyond what they volunteer on camera."
+focus_unit: exchange or answer
+length_bands:
+  - {range: "10–20 s", use: "one line or one reaction"}
+  - {range: "20–40 s", use: "a story with a punchline"}
+  - {range: "40–60 s", use: "a back-and-forth that escalates"}
+hook_window_s: 2
+hook_max_words: 8
+hook_style: CAPS, bold
+hook_examples: ["SHE DID NOT EXPECT THAT ANSWER", "HE'S BEEN WAITING YEARS TO SAY THIS", "THE WAY SHE LOOKS AT HIM"]
+hook_shapes: [recognition-reveal, strangest-line, chemistry, premise-as-POV]
+min_per_shape: 1
+banned_hooks: ["anything about relationships or private life not said on camera", "quotation marks around words not in the transcript"]
+structure_extra: "Name card (ACTOR / role) in second 0–1 when the brief requires it."
+universal_situations: [teasing a friend, an embarrassing story, a bad audition, meeting your hero]
+sound_rule: "Original audio; captions throughout; watermark layer if the brief supplies one."
+content_types:
+  - {code: A, name: "Chemistry", definition: "co-stars teasing, finishing sentences"}
+  - {code: B, name: "Confession", definition: "a story or admission nobody expected"}
+  - {code: C, name: "Strangest line", definition: "the line that makes no sense out of context"}
+  - {code: D, name: "Game gone wrong", definition: "quiz/game answers"}
+intensity_label: laugh / surprise
+subject_column: Talent
+secondary_reaction: make viewers laugh
